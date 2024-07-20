@@ -70,7 +70,7 @@ internal static class HostingExtensions
             })
             .AddTestUsers(TestUsers.Users);
 
-        var authenticationBuilder = builder.Services.AddAuthentication();
+/*        var authenticationBuilder = builder.Services.AddAuthentication();
 
         var googleClientId = builder.Configuration["Authentication:Google:ClientId"];
         var googleClientSecret = builder.Configuration["Authentication:Google:ClientSecret"];
@@ -101,7 +101,7 @@ internal static class HostingExtensions
                     NameClaimType = "name",
                     RoleClaimType = "role"
                 };
-            });
+            });*/
 
         return builder.Build();
     }
